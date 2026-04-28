@@ -1,0 +1,60 @@
+/* RESET GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* BASE */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPOGRAPHIE & FOND GLOBAL */
+body {
+  font-family: "Poppins", Roboto, Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* LIENS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ANIMATION PAGE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SCROLLBAR (optionnel mais premium) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
